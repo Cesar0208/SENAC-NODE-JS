@@ -18,6 +18,8 @@ app.get("/usuarios", (req, res) => {
     res.json(users);
 })
 
+// Rota POST
+
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`)
 });
