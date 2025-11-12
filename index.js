@@ -19,6 +19,15 @@ app.get("/usuarios", (req, res) => {
 })
 
 // Rota POST
+app.post("/usuarios", (req, res) => {
+    const novoUsuario = {
+        id: users.length + 1,
+        nome: req.body.nome
+    };
+
+    users.push(novoUsuario);
+    res.status(201).json(`Novo usuario adicionado ${novoUsuario}`);
+})
 
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`)
