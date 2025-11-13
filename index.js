@@ -11,7 +11,7 @@ const port = 3000;
 // Criando Rotas
 let users = [
     {id: 1, nome: 'Cleber'},
-    {id: 2, nome: 'Bianca'},
+    {id: 2, nome: 'Mario'},
     {id: 3, nome: 'Jão'}
 ];
 
@@ -32,5 +32,5 @@ app.post("/usuarios", (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`)
+    console.log(`Servidor rodando em http://localhost:${port}`);
 });
